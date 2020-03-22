@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>deck.gl GeoJsonLayer (polygon) Example</title>
+    <title>UBC Buildings</title>
     
     <script src="https://unpkg.com/deck.gl@^7.0.0/dist.min.js"></script>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js"></script>
@@ -57,7 +57,7 @@
     ];
 
     const geojsonLayer = new GeoJsonLayer({
-      data: 'https://raw.githubusercontent.com/J21ongcol/deck.gl-by-mapping-UBC-buildings/master/ubcv_building_records.geojson.txt',
+      data: 'https://raw.githubusercontent.com/UBCGeodata/ubcv-buildings/master/geojson/ubcv_building_records.geojson',
       opacity: 0.8,
       stroked: false,
       filled: true,
