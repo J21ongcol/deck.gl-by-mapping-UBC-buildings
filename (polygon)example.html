@@ -65,8 +65,8 @@
       wireframe: true,
       fp64: true,
 
-      getElevation: f => Math.sqrt(f.properties.valuePerSqm) * 10,
-      getFillColor: f => colorScale(f.properties.growth),
+      getElevation: f => Math.sqrt(f.properties.COUNT_FLOORS) * 10,
+      getFillColor: f => colorScale(f.properties.NAME),
       getLineColor: [255, 255, 255],
 
       pickable: true,
@@ -99,10 +99,10 @@
         tooltip.style.top = `${y}px`;
         tooltip.style.left = `${x}px`;
         tooltip.innerHTML = `
-    <div><b>Average Property Value &nbsp;</b></div>
-    <div><div>${object.properties.valuePerSqm} / m<sup>2</sup></div></div>
-    <div><b>Growth</b></div>
-    <div>${Math.round(object.properties.growth * 100)}%</div>
+    <div><b>Building Floors</b></div>
+    <div><div>${object.properties.COUNT_FLOORS} / m<sup>2</sup></div></div>
+    <div><b>Building Name</b></div>
+    <div>${Math.round(object.properties.NAME * 100)}%</div>
     `;
       } else {
         tooltip.innerHTML = '';
