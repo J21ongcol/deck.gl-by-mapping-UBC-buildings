@@ -78,7 +78,7 @@
       mapStyle: 'mapbox://styles/j21ongcol/ck83q2w3d0t0y1io85vgv31a0',
       latitude: 49.2606,
       longitude: -123.2460,
-      zoom: 12,
+      zoom: 15,
       maxZoom: 16,
       pitch: 45,
       layers: [geojsonLayer]
@@ -102,7 +102,7 @@
     <div><b>Building Name</b></div>
     <div><div>${object.properties.NAME} </div></div>
     <div><b>Building Floors</b></div>
-    <div>${Math.round(object.properties.COUNT_FLOORS)}</div>
+    <div>${Math.round(object.properties.COUNT_FLOORS * 1)}</div>
     `;
       } else {
         tooltip.innerHTML = '';
