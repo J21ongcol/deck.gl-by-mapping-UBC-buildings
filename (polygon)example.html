@@ -100,9 +100,9 @@
         tooltip.style.left = `${x}px`;
         tooltip.innerHTML = `
     <div><b>Building Floors</b></div>
-    <div><div>${object.properties.COUNT_FLOORS} / m<sup>2</sup></div></div>
+    <div><div>${object.properties.NAME} / m<sup>2</sup></div></div>
     <div><b>Building Name</b></div>
-    <div>${Math.round(object.properties.NAME * 100)}%</div>
+    <div>${Math.round(object.properties.COUNT_FLOORS * 100)}%</div>
     `;
       } else {
         tooltip.innerHTML = '';
